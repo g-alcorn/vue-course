@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 2: DOM Manipulation</title>
+  <link rel="stylesheet" href="">
+  <script id="local-src" src="../vue.js"></script>
+</head>
+<body>
+
+  <h1>Hello Vue</h1>
+
+  <section id="app">
+    <h3>{{ subtitle }}</h3>
+    <p>{{ variableText }} </p>
+    <input type="text" v-on:input="changeText">
+    <p>Box contains {{ charCount }} characters.</p>
+    <br>
+
+    <a v-bind:href="url" v-on:click="onUrlClick">This is a hyperlink made with the v-bind Directive</a>
+  </section>
+
+  <script src="sectionTwo.js">
+  </script>
+
+</body>
+</html>

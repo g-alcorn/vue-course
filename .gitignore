@@ -1,8 +1,7 @@
 # dependencies
 /node_modules
 vue.js
-
-#misc
+# misc
 .DS_store
 vueCourse.code-workspace
 
