@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VueJS Local Setup</title>
+  <link rel="stylesheet" href="">
+  <!-- <script id="cdn-src" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <script id="local-src" src="../vue.js"></script>
+</head>
+<body>
+
+  <h1>Hello Vue</h1>
+
+  <section id="app">
+    <p>{{ title }} </p>
+    <br>
+    <input type="text" v-on:input="changeTitle">
+  </section>
+
+  <script>
+    new Vue({
+    el: '#app',
+    data: {
+      title: 'Vue Test!!!'
+    },
+    methods: {
+      changeTitle: function(event) {
+        this.title = event.target.value;
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
