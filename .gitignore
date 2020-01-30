@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+vue.js
+
+#misc
+.DS_store
+vueCourse.code-workspace
+
