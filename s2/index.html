@@ -10,7 +10,7 @@
 
   <h1>Hello Vue</h1>
 
-  <section id="app">
+  <section id="app" v-on:mousemove="updateCoordinates">
     <h3>{{ subtitle }}</h3>
     <p>{{ variableText }} </p>
     <input type="text" v-on:input="changeText">
@@ -18,6 +18,19 @@
     <br>
 
     <a v-bind:href="url" v-on:click="onUrlClick">This is a hyperlink made with the v-bind Directive</a>
+
+    <hr>
+    <button v-on:click="onButtonClick">Click Me!</button>
+    <p>Button has been clicked {{ buttonCounter }} times</p>
+    <hr>
+
+    <p>
+      Mouse Coordinates: {{ x }}, {{ y }}
+      <br>
+      <span v-on:mousemove.stop="">Dead Spot :(</span>
+      <br>
+      Live spot! :O
+    </p>
   </section>
 
   <script src="sectionTwo.js">
