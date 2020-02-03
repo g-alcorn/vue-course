@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 2: Exercise 2</title>
+  <link rel="stylesheet" href="">
+  <script id="local-src" src="../../vue.js"></script>
+</head>
+<body>
+
+  <section id="app">
+    <h3>{{ title }}</h3>
+    <h6>{{ counter}} </h6>
+    <hr>
+    <div>
+      <button v-on:click="onButtonClick">Show Alert!</button>
+    </div>
+    <hr>
+    <div>
+      <input type="text" v-on:keyup="updateInput">
+      <p>Value: {{ inputOne }}</p>
+    </div>
+    <hr>
+    <div>
+      <input type="text" v-on:keydown.enter="onEnterKey">
+      <p>Value: {{ inputTwo }}</p>
+    </div>
+  </section>
+  <script src="exercise2.js">
+  </script>
+
+</body>
+</html>
